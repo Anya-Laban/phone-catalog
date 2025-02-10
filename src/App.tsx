@@ -1,21 +1,23 @@
-import React from 'react';
+import { Outlet } from 'react-router-dom';
 import './App.scss';
+import { Header } from './modules/shared/Header';
+import { Footer } from './modules/shared/Footer';
+import { useContext } from 'react';
+import { ThemeContext } from './store/ThemeProvider';
+import classNames from 'classnames';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
+export const App = () => {
+  const { isThemeDark } = useContext(ThemeContext);
 
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
-
-export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
+    <div className={classNames('App', { App_darkTheme: isThemeDark })}>
+      <Header />
+
+      <main className="App__main">
+        <Outlet />
+      </main>
+
+      <Footer />
     </div>
   );
 };
