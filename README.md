@@ -15,3 +15,15 @@ A design for project:
 - HTML markup
 - CSS(flexbox, grid, BEM methodology)
 - SSAS preprocessor
+
+## Running the Project Locally
+To run this project locally on your machine, follow these steps:
+
+1. Clone the repository:
+    git clone https://github.com/Anya-Laban/phone-catalog.git
+2. Navigate to the project directory:
+    cd phone-catalog
+3. Install the dependencies:
+    npm install
+4. Start the development server:
+    npm start
