@@ -10,9 +10,8 @@ A design for project:
 
 ## Technologies that were used
 - React
-- Java Script
-- Type Script
-- HTML markup
+- TypeScript
+- HTML
 - CSS(flexbox, grid, BEM methodology)
 - SASS preprocessor
 
