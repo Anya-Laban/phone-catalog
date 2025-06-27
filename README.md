@@ -14,7 +14,7 @@ A design for project:
 - Type Script
 - HTML markup
 - CSS(flexbox, grid, BEM methodology)
-- SSAS preprocessor
+- SASS preprocessor
 
 ## Running the Project Locally
 To run this project locally on your machine, follow these steps:
